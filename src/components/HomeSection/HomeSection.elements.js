@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 50px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#19232B")};
 `;
 
 export const InfoRow = styled.div`
   display: flex;
+  height: 92vh;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
@@ -15,7 +16,6 @@ export const InfoRow = styled.div`
 `;
 
 export const InfoColumn = styled.div`
-  margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
   flex: 1;
@@ -32,7 +32,6 @@ export const InfoColumn = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
@@ -42,7 +41,7 @@ export const ImgWrapper = styled.div`
   max-width: 555px;
   display: flex;
   justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -51,7 +50,7 @@ export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? "#fff" : "#4B59F7")};
   font-size: 18px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 `;
@@ -67,7 +66,11 @@ export const Img = styled.img`
 `;
 
 export const Heading = styled.div`
-  display:flex;
+  display: flex;
+`;
+
+export const LinkSection = styled(Link)`
+  padding-right: 20px;
 `;
 
 export const Name = styled.h1`
@@ -77,7 +80,6 @@ export const Name = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: #20ce65;
-
 `;
 
 export const LastName = styled.h1`
@@ -92,5 +94,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fff" : "#1c2237")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#c3c4c4" : "#1c2237")};
 `;

@@ -25,11 +25,12 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#20CE65" : "#4B59F7")};
+  background: ${({ primary }) => (primary ? "#20CE65" : "#fff")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: #fff;
+  color: ${({ primary }) => (primary ? "#fff" : "#000")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;

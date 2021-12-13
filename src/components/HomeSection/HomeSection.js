@@ -11,21 +11,22 @@ import {
   LastName,
   Subtitle,
   ImgWrapper,
+  LinkSection,
   Img,
   Name,
-} from "./InfoSection.elements";
+} from "./HomeSection.elements";
 
-function InfoSection({
+function HomeSection({
   primary,
   lightBg,
   topLine,
   lightTopLine,
-  lightText,
   lightTextDesc,
   headline,
   lastName,
   description,
-  buttonLabel,
+  buttonLabel1,
+  buttonLabel2,
   img,
   alt,
   imgStart,
@@ -44,11 +45,18 @@ function InfoSection({
                   <LastName>{lastName}</LastName>
                 </Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to="/contact">
-                  <Button big fontBig primary={primary}>
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                <Heading>
+                  <LinkSection to="/about">
+                    <Button fontBig primary={false}>
+                      {buttonLabel1}
+                    </Button>
+                  </LinkSection>
+                  <Link to="/contact">
+                    <Button fontBig primary={primary}>
+                      {buttonLabel2}
+                    </Button>
+                  </Link>
+                </Heading>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
@@ -63,4 +71,4 @@ function InfoSection({
   );
 }
 
-export default InfoSection;
+export default HomeSection;

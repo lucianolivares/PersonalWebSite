@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaMagento } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
@@ -71,6 +70,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  font-weight: 500;
   border-bottom: 2px solid transparent;
   &:hover {
     border-bottom: 2px solid #4b59f7;

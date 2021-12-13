@@ -10,7 +10,8 @@ export const homeObjOne = {
   lastName: "Olivares",
   description:
     "Ingeniero en Maquinaria y apasionado por la programación. He desarrollado sitios web con Django, aplicaciones multiplataforma con Kivy y me encuentro aprendiendo React",
-  buttonLabel: "Contactar",
+  buttonLabel1: "Trayectoria",
+  buttonLabel2: "Contactar",
   imgStart: "",
   img: me,
   alt: "Credit Card",
