@@ -6,7 +6,7 @@ import { homeObjOne } from "./Data";
 function Home() {
   return (
     <>
-      <HomeSection {...homeObjOne} />
+      <HomeSection id="home" {...homeObjOne} />
     </>
   );
 }

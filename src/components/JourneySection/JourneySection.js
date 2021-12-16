@@ -1,10 +1,12 @@
 import React from 'react'
 import {
+    Circle,
     LabelText,
     Line,
     Time,
     TimelineContent,
-    TimelineItem
+    TimelineItem,
+    TimeLink
 } from './JourneySection.elements'
 
 const JourneySection = ({ data }) => {
@@ -21,6 +23,16 @@ const JourneySection = ({ data }) => {
                     <LabelText>
                         {data.text}
                     </LabelText>
+                    {data.link && (
+                        <TimeLink
+                            href={data.link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {data.link.text}
+                        </TimeLink>
+                    )}
+                    <Circle />
                 </TimelineContent>
             </TimelineItem>
         </>

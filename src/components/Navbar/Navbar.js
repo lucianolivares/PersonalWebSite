@@ -34,27 +34,27 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/" onClick={closeMobileMenu}>
+                <NavLinks to="home" smooth={true} spy={true} onClick={closeMobileMenu}>
                   Inicio
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/about" onClick={closeMobileMenu}>
+                <NavLinks to="journey" smooth={true} spy={true} onClick={closeMobileMenu}>
                   Trayectoria
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/services" onClick={closeMobileMenu}>
+                <NavLinks to="services" smooth={true} onClick={closeMobileMenu}>
                   Servicios
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/works" onClick={closeMobileMenu}>
+                <NavLinks to="works" onClick={closeMobileMenu}>
                   Trabajos
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contact" onClick={closeMobileMenu}>
+                <NavLinks to="contact" onClick={closeMobileMenu}>
                   Contacto
                 </NavLinks>
               </NavItem>

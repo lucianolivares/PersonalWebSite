@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
+export const JourneyContainer = styled.div`
+  background: #202D37;
+`;
+
+export const JourneyTitle = styled.h1`
+    color: #20ce65;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  
+`;
 export const TimelineContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 40px 0;
     &:after {
-        background-color: #e17b77;
+        background-color: #FFC514;
         content: '';
         position: absolute;
         left: calc(50% - 2px);
@@ -54,10 +64,10 @@ export const TimelineContent = styled.div`
         width: 15px;
         height: 15px;
     }
-    &:nth-child(odd) {
+    ${TimelineItem}:nth-child(odd) & {
         text-align: left;
         align-items: flex-start;
-        &:after {
+        &::after {
             right: auto;
             left: -7.5px;
             box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -76,7 +86,7 @@ export const Line = styled.span`
     padding: 5px;
     position: absolute;
     text-transform: uppercase;
-    &:nth-child(odd) {
+    ${TimelineItem}:nth-child(odd) & {
         left: auto;
         right: 5px;
     }
@@ -95,3 +105,29 @@ export const LabelText = styled.p`
     max-width: 250px;
 `
 
+export const TimeLink = styled.a`
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    &:after {
+        content: ' ►';
+        font-size: 12px;
+    }
+`
+
+export const Circle = styled.circle`
+    background-color: #FFC514;
+    border: 3px solid #FFC514;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    ${TimelineItem}:nth-child(odd) & {
+        right: auto;
+        left: -40px;
+    }
+`
