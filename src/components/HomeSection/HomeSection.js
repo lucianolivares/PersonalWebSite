@@ -18,7 +18,6 @@ import {
 
 function HomeSection({
   primary,
-  lightBg,
   topLine,
   lightTopLine,
   lightTextDesc,
@@ -34,7 +33,6 @@ function HomeSection({
 }) {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
@@ -66,7 +64,6 @@ function HomeSection({
             </InfoColumn>
           </InfoRow>
         </Container>
-      </InfoSec>
     </>
   );
 }

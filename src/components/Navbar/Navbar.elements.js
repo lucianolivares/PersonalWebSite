@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll'
 import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
@@ -21,7 +22,7 @@ export const NavbarContainer = styled(Container)`
   ${Container}
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(LinkScroll)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -93,12 +94,13 @@ export const NavItemBtn = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkScroll)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  cursor: pointer;
   height: 100%;
   &.active {
     color: #20ce65
@@ -119,7 +121,7 @@ export const NavLinks = styled(Link)`
   }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkScroll)`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -6,7 +6,7 @@ import { JourneyContainer, JourneyTitle, TimelineContainer } from '../../compone
 const JourneyPage = () => {
     return (
         <>
-            <JourneyContainer id="journey">
+            <JourneyContainer name="journey">
                 <JourneyTitle>
                     Mi Trayectoria
                 </JourneyTitle>

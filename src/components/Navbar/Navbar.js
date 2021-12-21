@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
+
 import logo from "../../images/logo.png";
 import {
   Nav,
@@ -34,22 +35,22 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="home" smooth={true} spy={true} onClick={closeMobileMenu}>
+                <NavLinks to="home" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
                   Inicio
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="journey" smooth={true} spy={true} onClick={closeMobileMenu}>
+                <NavLinks to="journey" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
                   Trayectoria
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="services" smooth={true} onClick={closeMobileMenu}>
+                <NavLinks to="services" spy={true} smooth={true} offset={80} duration={500}onClick={closeMobileMenu}>
                   Servicios
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="works" onClick={closeMobileMenu}>
+                <NavLinks to="works" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
                   Trabajos
                 </NavLinks>
               </NavItem>

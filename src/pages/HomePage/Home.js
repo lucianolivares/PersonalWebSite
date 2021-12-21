@@ -1,12 +1,15 @@
 import React from "react";
 import { HomeSection } from "../../components";
 import { homeObjOne } from "./Data";
-
+import { InfoSec } from '../../components/HomeSection/HomeSection.elements'
 
 function Home() {
   return (
     <>
-      <HomeSection id="home" {...homeObjOne} />
+      <InfoSec  name="home" >
+        <HomeSection {...homeObjOne} />
+
+      </InfoSec>
     </>
   );
 }

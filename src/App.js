@@ -9,7 +9,7 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      <Home />
+      <Home  name="home" />
       <JourneyPage />
     </Router>
   );
