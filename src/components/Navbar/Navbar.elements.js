@@ -1,11 +1,10 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll'
-import { Container } from '../../globalStyles';
+import styled from "styled-components";
+import { Link as LinkScroll } from "react-scroll";
+import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
   background: #19232b;
-  height: 80px;
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  transition: all 0.1s linear;
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -55,6 +55,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  transition: all 0.1s linear;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -103,11 +104,11 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
   height: 100%;
   &.active {
-    color: #20ce65
+    color: #20ce65;
   }
   &:hover {
     color: #20ce65;
-    transition: all 0.3s ease;
+    transition: 0.2s ease-in-out;
   }
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -116,7 +117,7 @@ export const NavLinks = styled(LinkScroll)`
     display: table;
     &:hover {
       color: #20ce65;
-      transition: all 0.3s ease;
+      transition: 0.2s ease-in-out;
     }
   }
 `;

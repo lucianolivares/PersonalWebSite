@@ -1,44 +1,13 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-export const InfoSec = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#19232B")};
-`;
-
-export const InfoRow = styled.div`
-  display: flex;
-  height: 92vh;
-  margin: 0 -15px -15px -15px;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
-`;
-
-export const InfoColumn = styled.div`
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-  }
-`;
+import { Link as LinkScroll } from "react-scroll";
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 100%;
   padding-top: 0;
-  @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
-  }
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 555px;
+  max-width: 100%;
   display: flex;
   justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
   @media screen and (max-width: 768px) {
@@ -69,24 +38,24 @@ export const Heading = styled.div`
   display: flex;
 `;
 
-export const LinkSection = styled(Link)`
+export const LinkSection = styled(LinkScroll)`
   padding-right: 20px;
 `;
 
 export const Name = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding-right: 10px;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: bold;
   color: #20ce65;
 `;
 
 export const LastName = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: bold;
   color: #fff;
 `;
 export const Subtitle = styled.p`
@@ -94,5 +63,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#c3c4c4" : "#1c2237")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fff" : "#fff")};
 `;

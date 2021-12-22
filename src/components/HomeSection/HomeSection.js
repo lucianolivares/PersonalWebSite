@@ -1,10 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container, Button } from "../../globalStyles";
+import { Button, InfoRow, InfoColumn } from "../../globalStyles";
 import {
-  InfoSec,
-  InfoRow,
-  InfoColumn,
   TextWrapper,
   TopLine,
   Heading,
@@ -29,41 +25,38 @@ function HomeSection({
   img,
   alt,
   imgStart,
-  start,
 }) {
   return (
     <>
-        <Container>
-          <InfoRow imgStart={imgStart}>
-            <InfoColumn>
-              <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                <Heading>
-                  <Name>{headline}</Name>
-                  <LastName>{lastName}</LastName>
-                </Heading>
-                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Heading>
-                  <LinkSection to="/about">
-                    <Button fontBig primary={false}>
-                      {buttonLabel1}
-                    </Button>
-                  </LinkSection>
-                  <Link to="/contact">
-                    <Button fontBig primary={primary}>
-                      {buttonLabel2}
-                    </Button>
-                  </Link>
-                </Heading>
-              </TextWrapper>
-            </InfoColumn>
-            <InfoColumn>
-              <ImgWrapper start={start}>
-                <Img src={img} alt={alt} />
-              </ImgWrapper>
-            </InfoColumn>
-          </InfoRow>
-        </Container>
+      <InfoRow imgStart={imgStart}>
+        <InfoColumn>
+          <TextWrapper>
+            <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+            <Heading>
+              <Name>{headline}</Name>
+              <LastName>{lastName}</LastName>
+            </Heading>
+            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+            <Heading>
+              <LinkSection to="journey" spy={true} offset={-80}>
+                <Button fontBig primary={false}>
+                  {buttonLabel1}
+                </Button>
+              </LinkSection>
+              <LinkSection to="/contact">
+                <Button fontBig primary={primary}>
+                  {buttonLabel2}
+                </Button>
+              </LinkSection>
+            </Heading>
+          </TextWrapper>
+        </InfoColumn>
+        <InfoColumn>
+          <ImgWrapper>
+            <Img src={img} alt={alt} />
+          </ImgWrapper>
+        </InfoColumn>
+      </InfoRow>
     </>
   );
 }

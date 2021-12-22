@@ -1,4 +1,4 @@
-import me from '../../images/Me1.png'
+import me from "../../images/Me1.png";
 export const homeObjOne = {
   primary: true,
   lightBg: false,

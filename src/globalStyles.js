@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
  } 
 `;
 
@@ -41,6 +42,36 @@ export const Button = styled.button`
   }
   @media screen and (max-width: 960px) {
     width: 100%;
+  }
+`;
+
+export const InfoSec = styled.div`
+  color: #fff;
+  min-height: 92vh;
+  background: ${({ lightBg }) => (lightBg ? "#202D37" : "#19232B")};
+`;
+
+export const InfoRow = styled.div`
+  display: flex;
+  min-height: 80vh;
+  margin: 0 -15px 0 -15px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+`;
+
+export const InfoColumn = styled.div`
+  padding-right: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  flex-basis: 50%;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

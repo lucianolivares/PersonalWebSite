@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
-
 import logo from "../../images/logo.png";
 import {
   Nav,
@@ -18,7 +17,6 @@ import {
 function Navbar() {
   const [click, setClick] = useState(false);
 
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -33,24 +31,44 @@ function Navbar() {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu onClick={handleClick} click={click} activeClass="active">
               <NavItem>
-                <NavLinks to="home" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
+                <NavLinks
+                  to="home"
+                  spy={true}
+                  offset={-80}
+                  onClick={closeMobileMenu}
+                >
                   Inicio
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="journey" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
-                  Trayectoria
+                <NavLinks
+                  to="journey"
+                  spy={true}
+                  offset={-80}
+                  onClick={closeMobileMenu}
+                >
+                  Experiencia
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="services" spy={true} smooth={true} offset={80} duration={500}onClick={closeMobileMenu}>
+                <NavLinks
+                  to="services"
+                  spy={true}
+                  offset={80}
+                  onClick={closeMobileMenu}
+                >
                   Servicios
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="works" spy={true} smooth={true} offset={80} duration={500} onClick={closeMobileMenu}>
+                <NavLinks
+                  to="works"
+                  spy={true}
+                  offset={80}
+                  onClick={closeMobileMenu}
+                >
                   Trabajos
                 </NavLinks>
               </NavItem>

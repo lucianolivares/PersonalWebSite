@@ -1,25 +1,42 @@
-import React from 'react';
-import timelineData from './Data';
-import { JourneySection } from '../../components'
-import { JourneyContainer, JourneyTitle, TimelineContainer } from '../../components/JourneySection/JourneySection.elements'
-
+import React from "react";
+import timelineData from "./Data";
+import { JourneySection } from "../../components";
+import {
+  JourneyTitle,
+  SubTitle,
+  TimelineContainer,
+} from "../../components/JourneySection/JourneySection.elements";
+import { Container, InfoColumn, InfoRow, InfoSec } from "../../globalStyles";
+import {
+  Img,
+  ImgWrapper,
+} from "../../components/HomeSection/HomeSection.elements";
+import working from "../../images/certificate.svg";
 const JourneyPage = () => {
-    return (
-        <>
-            <JourneyContainer name="journey">
-                <JourneyTitle>
-                    Mi Trayectoria
-                </JourneyTitle>
-                <TimelineContainer>
-                    {
-                        timelineData.map((data, idx) => (
-                            <JourneySection data={data} key={idx} />
-                            ))
-                        }
-                </TimelineContainer>
-            </JourneyContainer>
-        </>
-    )
-}
+  return (
+    <>
+      <InfoSec lightBg={true} name="journey">
+        <SubTitle>Empleos y Educación</SubTitle>
+        <JourneyTitle>Mi Experiencia</JourneyTitle>
+        <Container>
+          <InfoRow>
+            <InfoColumn>
+              <ImgWrapper>
+                <Img src={working} />
+              </ImgWrapper>
+            </InfoColumn>
+            <InfoColumn>
+              <TimelineContainer>
+                {timelineData.map((data, idx) => (
+                  <JourneySection data={data} key={idx} />
+                ))}
+              </TimelineContainer>
+            </InfoColumn>
+          </InfoRow>
+        </Container>
+      </InfoSec>
+    </>
+  );
+};
 
-export default JourneyPage
+export default JourneyPage;

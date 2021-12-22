@@ -1,14 +1,15 @@
 import React from "react";
 import { HomeSection } from "../../components";
 import { homeObjOne } from "./Data";
-import { InfoSec } from '../../components/HomeSection/HomeSection.elements'
+import { Container, InfoSec } from "../../globalStyles";
 
 function Home() {
   return (
     <>
-      <InfoSec  name="home" >
-        <HomeSection {...homeObjOne} />
-
+      <InfoSec name="home">
+        <Container>
+          <HomeSection {...homeObjOne} />
+        </Container>
       </InfoSec>
     </>
   );
