@@ -1,27 +1,32 @@
 import React from "react";
-import { Button, InfoRow, InfoColumn } from "../../globalStyles";
+import { InfoRow, InfoColumn } from "../../globalStyles";
+import * as FaIcons from "react-icons/fa";
+import * as GoIcons from "react-icons/go";
 import {
   TextWrapper,
   TopLine,
   Heading,
   LastName,
-  Subtitle,
+  LinkLabel,
   ImgWrapper,
-  LinkSection,
+  Description,
   Img,
+  Info,
+  Icon,
   Name,
+  LinksContainer,
 } from "./HomeSection.elements";
 
+
 function HomeSection({
-  primary,
   topLine,
   lightTopLine,
-  lightTextDesc,
   headline,
   lastName,
   description,
-  buttonLabel1,
-  buttonLabel2,
+  address,
+  email,
+  links,
   img,
   alt,
   imgStart,
@@ -36,19 +41,41 @@ function HomeSection({
               <Name>{headline}</Name>
               <LastName>{lastName}</LastName>
             </Heading>
-            <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-            <Heading>
-              <LinkSection to="journey" spy={true} offset={-80}>
-                <Button fontBig primary={false}>
-                  {buttonLabel1}
-                </Button>
-              </LinkSection>
-              <LinkSection to="/contact">
-                <Button fontBig primary={primary}>
-                  {buttonLabel2}
-                </Button>
-              </LinkSection>
-            </Heading>
+            <Description>{description}</Description>
+            <Info>
+              <Icon>
+                <GoIcons.GoLocation size={22} />
+              </Icon>
+              {address}
+            </Info>
+            <Info>
+              <Icon>
+                <GoIcons.GoMail size={22} />
+              </Icon>
+              {email}
+            </Info>
+            <LinksContainer>
+              <LinkLabel target="_blank" href={links.linkedIn}>
+                <Icon>
+                  <FaIcons.FaLinkedin />
+                </Icon>
+              </LinkLabel>
+              <LinkLabel target="_blank" href={links.youtube}>
+                <Icon>
+                  <FaIcons.FaYoutube />
+                </Icon>
+              </LinkLabel>
+              <LinkLabel target="_blank" href={links.github}>
+                <Icon>
+                  <FaIcons.FaGithub />
+                </Icon>
+              </LinkLabel>
+              <LinkLabel target="_blank" href={links.instagram}>
+                <Icon>
+                  <FaIcons.FaInstagram />
+                </Icon>
+              </LinkLabel>
+            </LinksContainer>
           </TextWrapper>
         </InfoColumn>
         <InfoColumn>

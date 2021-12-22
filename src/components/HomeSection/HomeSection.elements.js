@@ -19,7 +19,7 @@ export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? "#fff" : "#4B59F7")};
   font-size: 18px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
 `;
@@ -58,10 +58,39 @@ export const LastName = styled.h1`
   font-weight: bold;
   color: #fff;
 `;
-export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
+export const Description = styled.div`
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#fff" : "#fff")};
+  margin-bottom: 20px;
+`;
+
+export const Info = styled.div`
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+`;
+export const LinkLabel = styled.a`
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 35px;
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 24px;
+  padding-right: 10px;
+  cursor: pointer;
+`;
+
+export const Icon = styled.div`
+  padding-right: 20px;
+`;
+
+export const LinksContainer = styled.div`
+  display: flex;
 `;
