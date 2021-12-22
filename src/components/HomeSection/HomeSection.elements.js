@@ -9,9 +9,10 @@ export const TextWrapper = styled.div`
 export const ImgWrapper = styled.div`
   max-width: 100%;
   display: flex;
-  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
   @media screen and (max-width: 768px) {
-    display: none;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 20px;
   }
 `;
 
@@ -36,6 +37,9 @@ export const Img = styled.img`
 
 export const Heading = styled.div`
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LinkSection = styled(LinkScroll)`
@@ -74,6 +78,7 @@ export const Info = styled.div`
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 6px;
+  word-break: break-all;
 `;
 export const LinkLabel = styled.a`
   color: #fff;

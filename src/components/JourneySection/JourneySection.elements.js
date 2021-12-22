@@ -5,6 +5,7 @@ export const JourneyTitle = styled.h1`
   display: flex;
   font-size: 48px;
   justify-content: center;
+  word-break: break-all;
 `;
 
 export const SubTitle = styled.h1`
@@ -14,6 +15,7 @@ export const SubTitle = styled.h1`
   display: flex;
   justify-content: center;
   color: #fff;
+  word-break: break-all;
 `;
 
 export const TimelineContainer = styled.div`

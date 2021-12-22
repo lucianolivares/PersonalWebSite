@@ -33,7 +33,7 @@ function HomeSection({
 }) {
   return (
     <>
-      <InfoRow imgStart={imgStart}>
+      <InfoRow >
         <InfoColumn>
           <TextWrapper>
             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
