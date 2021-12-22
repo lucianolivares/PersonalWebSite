@@ -1,7 +1,7 @@
 const timelineData = [
   {
     title: "Desarrollador Freelancer",
-    date: "Presente - 2018",
+    date: "Presente - 2019",
     category: {
       tag: "Trabajo",
       color: "#20CE65",
@@ -10,7 +10,7 @@ const timelineData = [
   },
   {
     title: "Técnico Senior Tecnologias Mina",
-    date: "September 04 2019",
+    date: "Presente - 2019",
     category: {
       tag: "Trabajo",
       color: "#e17b77",
@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     title: "Ingenieria en maquinaria",
-    date: "November 07 2019",
+    date: "Diciembre 2018",
     category: {
       tag: "Estudios",
       color: "#1DA1F2",
@@ -28,7 +28,7 @@ const timelineData = [
   },
   {
     title: "Técnico en Electricidad nivel medio",
-    date: "December 18 2019",
+    date: "Diciembre 2013",
     category: {
       tag: "Estudios",
       color: "#20CE65",
