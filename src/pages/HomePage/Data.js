@@ -22,7 +22,7 @@ export const homeObjOne = {
   buttonLabel2: "Contactar",
   imgStart: "",
   img: me,
-  alt: "Credit Card",
+  alt: "Photo",
   start: "",
 };
 

@@ -3,7 +3,7 @@ import {
   Circle,
   Description,
   LabelText,
-  Time,
+  Date,
   TimelineContent,
   TimelineItem,
 } from "./JourneySection.elements";
@@ -13,7 +13,7 @@ const JourneySection = ({ data }) => {
     <>
       <TimelineItem>
         <TimelineContent>
-          <Time>{data.date}</Time>
+          <Date>{data.date}</Date>
           <LabelText>{data.title}</LabelText>
           <Description>
             {data.text}
