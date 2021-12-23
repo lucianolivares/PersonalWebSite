@@ -25,7 +25,7 @@ export const NavbarContainer = styled.div`
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  height: 7vh;
+  height: 6vh;
   @media screen and (max-width: 991px) {
     padding-right: 1rem;
     padding-left: 1rem;
