@@ -55,18 +55,19 @@ export const TimelineContent = styled.div`
 export const Date = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 16px;
+  text-transform: uppercase;
 `;
 
 export const LabelText = styled.p`
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 1.4rem;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 5px 0;
 `;
 
 export const Description = styled.p`
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
 `;
 
 export const Circle = styled.span`

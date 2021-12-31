@@ -28,7 +28,7 @@ function Navbar() {
     }
   }
 
-  const offset = -56
+  const offset = -58
   window.addEventListener('scroll', changeBackground)
 
   return (

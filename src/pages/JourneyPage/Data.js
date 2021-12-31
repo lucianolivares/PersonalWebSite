@@ -1,7 +1,7 @@
 const timelineData = [
   {
     title: "Desarrollador Freelancer",
-    date: "Presente - 2019",
+    date: "2019 - Presente",
     category: {
       tag: "Trabajo",
       color: "#20CE65",
@@ -10,12 +10,21 @@ const timelineData = [
   },
   {
     title: "Técnico Senior Tecnologias Mina",
-    date: "Presente - 2019",
+    date: "2019 - Presente",
     category: {
       tag: "Trabajo",
       color: "#e17b77",
     },
     text: "Soporte en terreno y remoto de técnologias mina caterpillar tales como terrain, fleet, detect, entre otras",
+  },
+  {
+    title: "Mantenedor Predictivo Equipos Mina",
+    date: "2018 - 2019",
+    category: {
+      tag: "Trabajo",
+      color: "#e17b77",
+    },
+    text: "Mantenimiento predictivo equipos mina, análisis de desgaste de componentes, detección temprana de fisuras.",
   },
   {
     title: "Ingenieria en maquinaria",

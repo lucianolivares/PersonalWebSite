@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
 
 export const ContainerHome = styled.div`
-  height: 94vh;
-  margin-top: -4px;
   display: flex;
+  height: 94vh;
   align-items: center;
-  justify-content: center;
-  padding: 0px 2rem;
+  padding: 0 2rem;
   @media screen and (max-width: 768px) {
     padding: 0 1rem;
     align-items: start;
@@ -22,8 +19,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 100%;
   display: flex;
+  max-width: 100%;
   padding-right: 1rem;
 
   @media screen and (max-width: 768px) {
@@ -33,73 +30,55 @@ export const ImgWrapper = styled.div`
   }
 `;
 
-export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#fff" : "#4B59F7")};
-  font-size: 18px;
-  line-height: 16px;
+export const TopLine = styled.p`
+  color: ${({ lightTopLine }) => (lightTopLine ? "#white" : "#4B59F7")};
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  letter-spacing: 0.1rem;
 `;
 
 export const Img = styled.img`
-  border-radius: 50px;
+  width: 100%;
+  border-radius: 4rem;
   max-height: 500px;
-`;
-
-export const Heading = styled.div`
-  display: flex;
-  @media screen and (max-width: 350px) {
-    flex-direction: column;
-  }
-`;
-
-export const LinkSection = styled(LinkScroll)`
-  padding-right: 20px;
 `;
 
 export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   font-size: clamp(2rem, 10vw, 3rem);
-  margin-bottom: 20px;
-  padding-right: 10px;
-  line-height: 1.8rem;
-  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: 100%;
 `;
 
-export const LastName = styled(Name)`
-  color: #fff;
-`;
-export const Description = styled.div`
+export const Description = styled.p`
   display: flex;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 `;
 
 export const Info = styled(Description)`
-  margin-bottom: 6px;
   word-break: break-all;
+  padding-bottom: 0.3rem;
 `;
 export const LinkLabel = styled.a`
-  display: flex;
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin-bottom: 35px;
-  margin-top: 15px;
-  font-size: 30px;
-  line-height: 24px;
-  padding-right: 10px;
+  font-size: 2rem;
   cursor: pointer;
   &:hover {
+    transform: scale(1.05);
     color: ${({ theme }) => theme.colors.secondary};
   }
 `;
 
 export const Icon = styled.div`
-  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
 `;
 
 export const LinksContainer = styled.div`
   display: flex;
+  padding-top: 1rem;
 `;

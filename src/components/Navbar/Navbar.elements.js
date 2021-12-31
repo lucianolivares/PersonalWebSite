@@ -19,11 +19,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-  z-index: 1;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 0 2rem;
   display: flex;
+  padding: 0 2rem;
   justify-content: space-between;
   height: 6vh;
   @media screen and (max-width: 991px) {
@@ -63,9 +60,9 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 93vh;
+    height: 94vh;
     position: absolute;
-    top: 7vh;
+    top: 6vh;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
@@ -74,6 +71,9 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-weight: 400;
   font-size: 1.6rem;
   @media screen and (max-width: 960px) {
@@ -95,13 +95,13 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
   display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
   height: 100%;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
   border-bottom: 2px solid transparent;
   &.active {
     color: ${({ theme }) => theme.colors.primary};
@@ -114,7 +114,7 @@ export const NavLinks = styled(LinkScroll)`
   }
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
     &:hover {

@@ -14,6 +14,9 @@ const theme = {
     bg_color: "#19232B",
     bg_color_ligth: "#202D37",
   },
+  media: {
+    medium: "768px"
+  }
 };
 
 function App() {

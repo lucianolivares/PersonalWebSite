@@ -5,8 +5,6 @@ import * as GoIcons from "react-icons/go";
 import {
   TextWrapper,
   TopLine,
-  Heading,
-  LastName,
   LinkLabel,
   ImgWrapper,
   Description,
@@ -16,7 +14,6 @@ import {
   Name,
   LinksContainer,
 } from "./HomeSection.elements";
-
 
 function HomeSection({
   topLine,
@@ -33,14 +30,13 @@ function HomeSection({
 }) {
   return (
     <>
-      <InfoRow >
+      <InfoRow>
         <InfoColumn>
           <TextWrapper>
             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-            <Heading>
-              <Name>{headline}</Name>
-              <LastName>{lastName}</LastName>
-            </Heading>
+            <Name>
+              {headline} {lastName}
+            </Name>
             <Description>{description}</Description>
             <Info>
               <Icon>
