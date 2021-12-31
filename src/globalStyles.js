@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
 
 export const InfoSec = styled.div`
   color: #fff;
+  margin-top: -1px;
+  /* border: 3px solid hotpink; */
   min-height: 94vh;
   background: ${({ lightBg, theme }) =>
     lightBg ? theme.colors.bg_color_ligth : theme.colors.bg_color};
@@ -49,8 +51,6 @@ export const InfoRow = styled.div`
   align-items: center;
   flex-direction: row;
   @media screen and (max-width: 768px) {
-    max-width: 100%;
-    display: flex;
     flex-direction: column-reverse;
   }
 `;

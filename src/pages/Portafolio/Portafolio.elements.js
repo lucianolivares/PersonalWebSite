@@ -6,10 +6,11 @@ export const Grid = styled.div`
   padding: 0 1rem 1rem 1rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
   
-  @media screen and (max-width: ${({ theme }) => theme.media.medium }) {
+  @media screen and (max-width: 1200px) {
     padding: 0 2rem 1rem 2rem;
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
   }
 `;
 
