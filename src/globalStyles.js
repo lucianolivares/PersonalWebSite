@@ -19,7 +19,6 @@ export const InfoSec = styled.div`
 export const Container = styled.div`
   padding: 0 1rem;
   z-index: 1;
-  padding-top: 10px;
 `;
 
 export const Button = styled.button`

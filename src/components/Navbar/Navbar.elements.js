@@ -2,13 +2,11 @@ import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  width: 100%;
-  display: inline-block;
+  display: flex;
+  position: sticky;
   background: ${({ theme }) => theme.colors.bg_color};
   left: ${({ click }) => (click ? 0 : "-100%")};
-  align-items: flex-start;
   font-size: 2rem;
-  position: sticky;
   top: 0;
   z-index: 999;
   transition: all 0.1s linear;
@@ -19,10 +17,11 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+  width: 100%;
   display: flex;
+  height: 6vh;
   padding: 0 2rem;
   justify-content: space-between;
-  height: 6vh;
   @media screen and (max-width: 991px) {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -36,8 +35,7 @@ export const NavLogo = styled(LinkScroll)`
 `;
 
 export const NavIcon = styled.img`
-  margin-right: 0.5rem;
-  width: 100%;
+  height: 2rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -57,7 +55,6 @@ export const NavMenu = styled.ul`
   text-align: center;
   transition: all 0.3s linear;
   @media screen and (max-width: 960px) {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 94vh;
@@ -78,6 +75,7 @@ export const NavItem = styled.li`
   font-size: 1.6rem;
   @media screen and (max-width: 960px) {
     width: 100%;
+    height: auto;
     &:hover {
       border: none;
     }

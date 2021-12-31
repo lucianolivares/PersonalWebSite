@@ -46,7 +46,7 @@ function Navbar() {
               <NavLinks
                 to="home"
                 spy={true}
-                offset={offset}
+                offset={-58}
                 onClick={closeMobileMenu}
               >
                 Inicio

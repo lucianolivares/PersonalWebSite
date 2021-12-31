@@ -9,7 +9,7 @@ export const homeObjOne = {
   headline: "Luciano",
   lastName: "Olivares",
   description:
-    "Ingeniero en Maquinaria y apasionado por la programación. He desarrollado sitios web con Django, aplicaciones multiplataforma con Kivy y me encuentro aprendiendo React",
+    "Soy desarrollador freelancer, trabajo principalmente con Django, Firebase, React y Kivy para aplicaciones multiplataforma. Enfocado en implementar interfaces intuitivas, responsivas y dinámicas.",
   email: "lucianolivares.lo@gmail.com",
   address: "La Serena, Chile",
   links: {

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const ContainerHome = styled.div`
   display: flex;
-  height: 94vh;
+  min-height: 94vh;
   align-items: center;
   padding: 0 2rem;
   @media screen and (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     align-items: start;
   }
 `;
@@ -46,6 +46,7 @@ export const Img = styled.img`
 export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   font-size: clamp(2rem, 10vw, 3rem);
+
   padding-bottom: 1rem;
   padding-top: 1rem;
   line-height: 100%;
