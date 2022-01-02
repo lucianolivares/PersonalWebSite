@@ -19,8 +19,13 @@ export const InfoSec = styled.div`
     lightBg ? theme.colors.bg_color_ligth : theme.colors.bg_color};
 `;
 export const Container = styled.div`
+  display: flex;
   padding: 0 1rem;
   z-index: 1;
+  min-height: 70vh;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Button = styled.button`
@@ -50,9 +55,6 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  @media screen and (max-width: 768px) {
-    flex-direction: column-reverse;
-  }
 `;
 
 export const InfoColumn = styled.div`

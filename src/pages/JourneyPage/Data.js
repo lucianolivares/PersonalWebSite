@@ -15,7 +15,7 @@ const timelineData = [
       tag: "Trabajo",
       color: "#e17b77",
     },
-    text: "Soporte en terreno y remoto de tecnologías mina caterpillar tales como terrain, fleet, detect, entre otras",
+    text: "Soporte en terreno y remoto de tecnologías mina Caterpillar tales como Terrain, Fleet, Detect, entre otras",
   },
   {
     title: "Mantenedor Predictivo Equipos Mina",

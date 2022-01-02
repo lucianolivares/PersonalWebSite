@@ -24,6 +24,11 @@ const Portafolio = () => {
         <Container>
           <InfoRow>
             <InfoColumn>
+              <ImgWrapper>
+                <Img src={programming} />
+              </ImgWrapper>
+            </InfoColumn>
+            <InfoColumn>
               <Grid>
                 {projects.map((data, index) => (
                   <Card image={data.image} target="_blank" href={data.url}>
@@ -34,11 +39,6 @@ const Portafolio = () => {
                   </Card>
                 ))}
               </Grid>
-            </InfoColumn>
-            <InfoColumn>
-              <ImgWrapper>
-                <Img src={programming} />
-              </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>

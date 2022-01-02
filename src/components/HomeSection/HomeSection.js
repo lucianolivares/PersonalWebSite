@@ -32,6 +32,11 @@ function HomeSection({
     <>
       <InfoRow>
         <InfoColumn>
+          <ImgWrapper>
+            <Img src={img} alt={alt} />
+          </ImgWrapper>
+        </InfoColumn>
+        <InfoColumn>
           <TextWrapper>
             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
             <Name>
@@ -73,11 +78,6 @@ function HomeSection({
               </LinkLabel>
             </LinksContainer>
           </TextWrapper>
-        </InfoColumn>
-        <InfoColumn>
-          <ImgWrapper>
-            <Img src={img} alt={alt} />
-          </ImgWrapper>
         </InfoColumn>
       </InfoRow>
     </>

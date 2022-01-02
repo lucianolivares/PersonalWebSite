@@ -13,6 +13,7 @@ export const ContainerHome = styled.div`
 export const TextWrapper = styled.div`
   max-width: 100%;
   padding-top: 0;
+  padding-left: 3rem;
   @media screen and (max-width: 768px) {
     padding-left: 0;
   }
@@ -22,12 +23,19 @@ export const ImgWrapper = styled.div`
   display: flex;
   max-width: 100%;
   padding-right: 1rem;
+  align-items:center;
 
   @media screen and (max-width: 768px) {
     margin: 1rem 0 2rem 0;
     height: 30vh;
     padding-right: 0;
   }
+`;
+export const Img = styled.img`
+  height: inherit;
+  width: 100%;
+  border-radius: 4rem;
+  max-height: 500px;
 `;
 
 export const TopLine = styled.p`
@@ -37,11 +45,6 @@ export const TopLine = styled.p`
   letter-spacing: 0.1rem;
 `;
 
-export const Img = styled.img`
-  width: 100%;
-  border-radius: 4rem;
-  max-height: 500px;
-`;
 
 export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
