@@ -33,16 +33,14 @@ export const TimelineContainer = styled.div`
     height: 100%;
   }
 `;
-
 export const TimelineItem = styled.div`
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  justify-content: flex-start;
+
   padding-left: 30px;
   padding-top: 10px;
   padding-top: 10px;
 `;
+
 
 export const TimelineContent = styled.div`
   display: flex;

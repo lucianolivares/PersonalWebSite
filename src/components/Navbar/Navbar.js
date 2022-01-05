@@ -28,14 +28,14 @@ function Navbar() {
     }
   }
 
-  const offset = -58
+
   window.addEventListener('scroll', changeBackground)
 
   return (
     <>
       <Nav className={`${navbar}`}>
         <NavbarContainer>
-          <NavLogo to="home" offset={offset} onClick={closeMobileMenu}>
+          <NavLogo to="home" offset={-56} onClick={closeMobileMenu}>
             <NavIcon src={logo} />
           </NavLogo>
           <MobileIcon onClick={handleClick}>
@@ -46,7 +46,7 @@ function Navbar() {
               <NavLinks
                 to="home"
                 spy={true}
-                offset={-58}
+                offset={-56}
                 onClick={closeMobileMenu}
               >
                 Inicio
@@ -56,7 +56,7 @@ function Navbar() {
               <NavLinks
                 to="journey"
                 spy={true}
-                offset={offset}
+                offset={-54}
                 onClick={closeMobileMenu}
               >
                 Experiencia
@@ -66,7 +66,7 @@ function Navbar() {
               <NavLinks
                 to="portafolio"
                 spy={true}
-                offset={offset}
+                offset={-52}
                 onClick={closeMobileMenu}
               >
                 Portafolio
@@ -76,7 +76,7 @@ function Navbar() {
               <NavLinks
                 to="contact"
                 spy={true}
-                offset={offset}
+                offset={-50}
                 onClick={closeMobileMenu}
               >
                 Contacto

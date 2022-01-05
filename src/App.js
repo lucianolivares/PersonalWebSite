@@ -6,6 +6,7 @@ import JourneyPage from "./pages/JourneyPage/JourneyPage";
 import { ThemeProvider } from 'styled-components'
 import Portafolio from "./pages/Portafolio/Portafolio";
 import Contact from "./pages/Contact/Contact";
+import { Footer } from "./components/Footer";
 
 const theme = {
   colors: {
@@ -29,6 +30,7 @@ function App() {
         <JourneyPage />
         <Portafolio />
         <Contact />
+        <Footer />
       </Router>
     </ThemeProvider>
   );

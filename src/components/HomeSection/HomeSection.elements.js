@@ -1,41 +1,42 @@
 import styled from "styled-components";
 
-export const ContainerHome = styled.div`
-  display: flex;
+export const HomeContainer = styled.div`
+  display: grid;
   min-height: 94vh;
-  align-items: center;
   padding: 0 2rem;
+  grid-template-columns: 50% 50%;
+  z-index: 1;
   @media screen and (max-width: 768px) {
-    padding: 1rem 1rem;
-    align-items: start;
+    grid-template-columns: 100%;
   }
 `;
+
 export const TextWrapper = styled.div`
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
   padding-top: 0;
-  padding-left: 3rem;
   @media screen and (max-width: 768px) {
     padding-left: 0;
   }
 `;
 
 export const ImgWrapper = styled.div`
+  width: 100%;
   display: flex;
-  max-width: 100%;
-  padding-right: 1rem;
-  align-items:center;
-
+  align-items: center;
+  justify-content: center;
   @media screen and (max-width: 768px) {
-    margin: 1rem 0 2rem 0;
-    height: 30vh;
-    padding-right: 0;
+    justify-content: flex-start;
   }
 `;
+
 export const Img = styled.img`
-  height: inherit;
-  width: 100%;
-  border-radius: 4rem;
-  max-height: 500px;
+  border-radius: 100px;
+  max-height: 25rem;
+  max-width: 100%;
+  object-fit: scale-down;
+
 `;
 
 export const TopLine = styled.p`
@@ -59,6 +60,7 @@ export const Description = styled.p`
   display: flex;
   font-size: 1.2rem;
   padding-bottom: 1rem;
+  max-width: 30rem;
 `;
 
 export const Info = styled(Description)`
@@ -85,4 +87,5 @@ export const Icon = styled.div`
 export const LinksContainer = styled.div`
   display: flex;
   padding-top: 1rem;
+  padding-bottom: 3rem;
 `;

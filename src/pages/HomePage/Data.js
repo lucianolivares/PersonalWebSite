@@ -1,5 +1,5 @@
 import me from "../../images/Me1.png";
-export const homeObjOne = {
+export const misDatos = {
   primary: true,
   lightBg: false,
   lightTopLine: true,

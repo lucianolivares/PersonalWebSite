@@ -6,7 +6,7 @@ import {
   SubTitle,
   TimelineContainer,
 } from "../../components/JourneySection/JourneySection.elements";
-import { Container, InfoColumn, InfoRow, InfoSec } from "../../globalStyles";
+import { Container, InfoColumn, InfoSec } from "../../globalStyles";
 import {
   Img,
   ImgWrapper,
@@ -19,12 +19,12 @@ const JourneyPage = () => {
         <SubTitle>Empleos y Educación</SubTitle>
         <JourneyTitle>Mi Experiencia</JourneyTitle>
         <Container>
-          <InfoRow>
             <InfoColumn>
               <ImgWrapper>
                 <Img src={working} />
               </ImgWrapper>
             </InfoColumn>
+
             <InfoColumn>
               <TimelineContainer>
                 {timelineData.map((data, idx) => (
@@ -32,7 +32,7 @@ const JourneyPage = () => {
                 ))}
               </TimelineContainer>
             </InfoColumn>
-          </InfoRow>
+            
         </Container>
       </InfoSec>
     </>

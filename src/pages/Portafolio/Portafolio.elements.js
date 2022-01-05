@@ -9,7 +9,7 @@ export const Grid = styled.div`
   grid-template-columns: repeat(2, minmax(10rem, 1fr));
   
   @media screen and (max-width: 1200px) {
-    padding: 0 2rem 1rem 2rem;
+    padding: 1rem 0;
     grid-template-columns: repeat(1, minmax(10rem, 1fr));
   }
 `;

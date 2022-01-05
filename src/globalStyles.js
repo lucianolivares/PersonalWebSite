@@ -18,13 +18,15 @@ export const InfoSec = styled.div`
   background: ${({ lightBg, theme }) =>
     lightBg ? theme.colors.bg_color_ligth : theme.colors.bg_color};
 `;
+
 export const Container = styled.div`
-  display: flex;
-  padding: 0 1rem;
+  display: grid;
+  padding: 0 2rem;
+  min-height: 78vh;
+  grid-template-columns: 50% 50%;
   z-index: 1;
-  min-height: 70vh;
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    grid-template-columns: 100%;
   }
 `;
 
@@ -50,23 +52,17 @@ export const Button = styled.button`
   }
 `;
 
-export const InfoRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: row;
-`;
-
 export const InfoColumn = styled.div`
-  flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  max-width: 50%;
-  flex-basis: 50%;
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
+  position: relative;
 `;
 
+export const FooterSection = styled.div`
+  height: 2rem;
+  background: ${({ lightBg, theme }) =>
+    lightBg ? theme.colors.bg_color_ligth : theme.colors.bg_color};
+`;
 export default GlobalStyle;
