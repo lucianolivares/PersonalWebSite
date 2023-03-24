@@ -3,7 +3,7 @@ import {
   JourneyTitle,
   SubTitle,
 } from "../../components/JourneySection/JourneySection.elements";
-import { Container, InfoColumn, InfoSec } from "../../globalStyles";
+import { ContainerPortafolio, InfoColumn, InfoSec } from "../../globalStyles";
 import {
   Grid,
   Card,
@@ -24,7 +24,7 @@ const Portafolio = () => {
       <InfoSec name="portafolio">
         <SubTitle> Trabajos Realizados </SubTitle>{" "}
         <JourneyTitle> Portafolio </JourneyTitle>{" "}
-        <Container>
+        <ContainerPortafolio className="portafolio">
           <InfoColumn>
             <ImgWrapper>
               <Img src={programming} />
@@ -44,7 +44,7 @@ const Portafolio = () => {
               ))}
             </Grid>
           </InfoColumn>
-        </Container>
+        </ContainerPortafolio>
       </InfoSec>
     </>
   );

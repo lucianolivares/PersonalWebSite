@@ -28,6 +28,27 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
   }
+  .portafolio {
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 100%;
+    }
+  }
+`;
+export const ContainerPortafolio = styled.div`
+  display: grid;
+  padding: 0 2rem;
+  min-height: 78vh;
+  grid-template-columns: 50% 50%;
+  z-index: 1;
+  @media screen and (max-width: 1500px) {
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+    grid-template-columns: 100%;
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: 600px;
+  }
 `;
 
 export const Button = styled.button`
