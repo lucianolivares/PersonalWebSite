@@ -1,6 +1,6 @@
 import autoStop from "../../images/autoStop.png";
-import autoStopIcon from '../../images/icono.jpeg'
-import youtube from '../../images/youtube.png'
+import bulkTech from '../../images/bulktech.webp'
+import youtube from '../../images/youtube.webp'
 
 const projects = [
   {
@@ -10,10 +10,10 @@ const projects = [
     image: autoStop,
   },
   {
-    title: "AutoStop App",
-    url: "#",
-    body: "Aplicación Multiplataforma desarrollada con Kivy y Firebase.",
-    image: autoStopIcon,
+    title: "BulkTech Website",
+    url: "https://www.bulktech.cl/",
+    body: "Sitio web empresa BulkTech, incluye blog renderizado con markdown, desarrollada con NextJS.",
+    image: bulkTech,
   },
   {
     title: "YouTube",
